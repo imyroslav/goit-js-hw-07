@@ -34,6 +34,5 @@ createBtn.addEventListener("click", (event) => {
 }) 
 
 destroyBtn.addEventListener("click", (event) => {
-  const boxeS = divDad.querySelector("div");
-  boxeS.remove();
+  divDad.innerHTML = '';
 })
