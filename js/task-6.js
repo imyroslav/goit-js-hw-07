@@ -16,9 +16,11 @@ const divDad = document.querySelector("#boxes");
 const input = document.querySelector("input");
 const createBtn = document.querySelector('button[data-create]');
 const destroyBtn = document.querySelector('button[data-destroy]');
-let side = 20
+
 
 createBtn.addEventListener("click", (event) => {
+  divDad.innerHTML = '';
+  let side = 20
   const amount = input.value
   if (amount >=1 && amount <= 100) {
     for( let i = 1; i <= amount; i += 1) {
